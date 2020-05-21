@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<form action="" method="post">
+	{% csrf_token %}
+	{{ form }}
+	<input type="Submit" value="Submit">
+</form>
+	{{ status }}
+
+	<br>
+	<br>
+	<button><a href="/read">Display Records</a></button>
+</body>
+</html>

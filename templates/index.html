@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+	<form action="/create/" method="post">
+		{% csrf_token %}
+		Roll No:<br>
+		<input type="text" name="roll">
+		<br>
+		Name:<br>
+		<input type="text" name="name">
+		<br>
+		Branch:<br>
+		<input type="text" name="branch">
+		<br><br>
+		<input type="Submit" value="Submit">
+
+	</form>
+	<br>
+	<button><a href="/read">Display Records</a></button>
+
+</body>
+</html>

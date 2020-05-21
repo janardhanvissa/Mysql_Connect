@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+	<h1>Available records in DB table</h1>
+
+	{% for i in read_std %}
+
+	<hr/>
+	<p>Roll No: {{i.rollno}}</p>
+	<p>Name of Student :{{i.name}}</p>
+	<p>Branch : {{i.branch}}</p>
+	<hr/>
+
+	{% endfor %}}
+
+</div>
+</body>
+</html>
